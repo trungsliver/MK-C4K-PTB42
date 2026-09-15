@@ -57,3 +57,29 @@ for a in range(2, 10):
     print("\nBảng cửu chương", a)
     for i in range(1, 11):
         print(f'{a} x {i} = {a*i}')
+
+# ========= VÒNG LẶP WHILE - VÒNG LẶP VÔ HẠN ==============
+# Vòng lặp while không biết trước số lần lặp, có thể chạy vô hạn
+
+# Cú pháp: while <điều kiện>: <Khối lệnh>
+# Vòng lặp while sẽ chạy đến khi điều kiện sai
+
+# Đề bài: in ra các số trong khoảng [1, 5]
+    # Dùng vòng lặp for
+for i in range(1, 6):
+    print(i, end=' ')
+
+    # Dùng vòng lặp while
+i = 1
+while i <= 5:
+    print(i, end=' ')
+    # Tăng i lên 1 đơn vị
+    i = i + 1   # i += 1
+
+# Ví dụ: Nhập số nguyên n trong khoảng [0, 10]
+# Nếu nhập sai (n<0 hoặc n>10) thì yêu cầu nhập lại
+n = int(input('\nNhập số nguyên trong khoảng [1, 10]: '))
+while n < 0 or n > 10:
+    print('Bạn đã nhập sai! Vui lòng nhập lại!')
+    n = int(input('\nNhập số nguyên trong khoảng [1, 10]: '))
+print('Nhập n thành công!')
