@@ -30,3 +30,16 @@ number = random.randint(0, 100)
 
 # Biến số đếm số lần đoán của người chơi
 count = 1
+
+# Người chơi nhập dự đoán
+guess = int(input('\nNhập dự đoán của bạn: '))
+
+while guess != number:
+    if guess < number:
+        print('Chưa đúng. Hãy nhập số lớn hơn')
+    if guess > number:
+        print('Chưa đúng. Hãy nhập số nhỏ hơn')
+    # Tăng số lần đoán thêm 1 và cho nhập lại
+    count += 1
+    guess = int(input('\nNhập dự đoán của bạn: '))
+print(f'Bạn đã đoán đúng sau {count} lần thử')
