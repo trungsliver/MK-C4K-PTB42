@@ -59,4 +59,25 @@ for i in range(1, 11):
         continue
     print(i, end = ' ')
 
+# ================= ÔN TẬP VÒNG LẶP FOR ==================
+# Dạng 1: In / hiển thị ra màn hình
+    # 1.1. In ra màn hình các số từ 0 đến n
+n = 10
+print(f'\nCác số trong khoảng [0, {n}]: ')
+for i in range(n+1):
+    print(i, end=' ')
 
+    # 1.2. In ra màn hình các số nguyên trong khoảng [a, b]
+a = 5
+b = 10
+print(f'\nCác số trong khoảng [{a}, {b}]: ')
+for i in range(a, b+1):
+    print(i, end=' ')
+
+    # 1.3. In ra màn hình các số chẵn trong khoảng [a, b]
+a = 1
+b = 10
+print(f'\nCác số chẵn trong khoảng [{a}, {b}]: ')
+for i in range(a, b+1):
+    if i % 2 == 0:
+        print(i, end=' ')
