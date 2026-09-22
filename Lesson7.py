@@ -81,3 +81,53 @@ print(f'\nCác số chẵn trong khoảng [{a}, {b}]: ')
 for i in range(a, b+1):
     if i % 2 == 0:
         print(i, end=' ')
+
+    # 1.4. In ra màn hình các số lẻ trong khoảng [a, b]
+a = 1
+b = 10
+print(f'\nCác số lẻ trong khoảng [{a}, {b}]: ')
+for i in range(a, b+1):
+    if i % 2 != 0:
+        print(i, end=' ')
+
+# Dạng 2: Tính tổng
+    # 2.1. Tính tổng các số trong khoảng [a, b]
+a, b = 1, 5
+total = 0       # Biến lưu tổng các số
+for i in range(a, b+1):
+    # Cộng dồn các số vào total
+    total += i      # totatl = total + i
+print(f'\nTổng các số trong khoảng [{a}, {b}] là: {total}')
+
+    # 2.2. Tính tổng các số chẵn trong khoảng [a, b]
+a, b = 1, 5
+total_even = 0       # Biến lưu tổng các số
+for i in range(a, b+1):
+    if i % 2 == 0:
+        total_even += i      # total_even = total_even + i
+print(f'\nTổng các số chẵn trong khoảng [{a}, {b}] là: {total_even}')
+
+    # 2.3. Tính tổng các số lẻ trong khoảng [a, b]
+a, b = 1, 5
+total_odd = 0      
+for i in range(a, b+1):
+    if i % 2 != 0:
+        total_odd += i      
+print(f'\nTổng các số lẻ trong khoảng [{a}, {b}] là: {total_odd}')
+
+# Dạng 3: Đếm số lượng
+    # 3.1. Đếm số lượng các số chẵn trong khoảng [a, b]
+a, b = 0, 10
+count_even = 0
+for i in range(a, b+1):
+    if i % 2 == 0:
+        count_even += 1
+print(f'\nSố lượng các số chẵn trong khoảng [{a}, {b}] là: {count_even}')
+
+    # 3.2. Đếm số lượng số lẻ trong khoảng [a,b]
+a, b = 1, 10
+count_odd = 0
+for i in range(a, b+1):
+    if i % 2 != 0:
+        count_odd += 1
+print(f'\nSố lượng các số lẻ trong khoảng [{a}, {b}] là: {count_odd}')
