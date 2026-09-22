@@ -24,22 +24,39 @@ print('Nhập n thành công!')
     # Người chơi cần nhập đến khi nào đoán đúng số đặc biệt thì dừng game
     # Khi người chơi đoán đúng, hiển thị số lần người chơi đã đoán
 
-import random
-# Lấy ngẫu nhiên 1 số trong khoảng [1,100]
-number = random.randint(0, 100)
+# import random
+# # Lấy ngẫu nhiên 1 số trong khoảng [1,100]
+# number = random.randint(0, 100)
 
-# Biến số đếm số lần đoán của người chơi
-count = 1
+# # Biến số đếm số lần đoán của người chơi
+# count = 1
 
-# Người chơi nhập dự đoán
-guess = int(input('\nNhập dự đoán của bạn: '))
+# # Người chơi nhập dự đoán
+# guess = int(input('\nNhập dự đoán của bạn: '))
 
-while guess != number:
-    if guess < number:
-        print('Chưa đúng. Hãy nhập số lớn hơn')
-    if guess > number:
-        print('Chưa đúng. Hãy nhập số nhỏ hơn')
-    # Tăng số lần đoán thêm 1 và cho nhập lại
-    count += 1
-    guess = int(input('\nNhập dự đoán của bạn: '))
-print(f'Bạn đã đoán đúng sau {count} lần thử')
+# while guess != number:
+#     if guess < number:
+#         print('Chưa đúng. Hãy nhập số lớn hơn')
+#     if guess > number:
+#         print('Chưa đúng. Hãy nhập số nhỏ hơn')
+#     # Tăng số lần đoán thêm 1 và cho nhập lại
+#     count += 1
+#     guess = int(input('\nNhập dự đoán của bạn: '))
+# print(f'Bạn đã đoán đúng sau {count} lần thử')
+
+# ========= CÂU LỆNH ĐIỀU KHIỂN VÒNG LẶP ===========
+    # break: thoát khỏi vòng lặp, bỏ qua tất cả lần lặp còn lại
+print('\nTest câu lệnh break')
+for i in range(1, 11):
+    if i == 5:
+        break
+    print(i, end = ' ')
+
+    # continue: bỏ qua lần lặp hiện tại, tiếp tục các lần lặp tiếp theo
+print('\nTest câu lệnh continue')
+for i in range(1, 11):
+    if i == 5:
+        continue
+    print(i, end = ' ')
+
+
