@@ -97,9 +97,27 @@ print('num2:', num2)
 
 # ------------------------- Luyện tập -----------------------
 # Bài 1: Nhập 2 thông tin: họ, tên. In ra màn hình tên đầy đủ
+ho = input('Nhập họ: ')
+ten = input('Nhập tên: ')
+    # cách 1: nối chuỗi
+print('Tên đầy đủ:', ho + ' ' + ten)
+    # Cách 2: dùng join()
+arr = [ho, ten]
+name1 = ' '.join(arr)
+print('Tên đầy đủ:', name1)
 
 # Bài 2: Nhập vào 1 xâu ký tự định dạng dd/mm/yyyy (01/08/2024)
     # Tách ngày, tháng, năm và hiển thị ra màn hình
+date1 = input('Nhập ngày tháng năm (dd/mm/yyyy): ')
+
+    # cách 1: dùng split()
+arr = date1.split('/')
+print(f'Ngày: {arr[0]}, Tháng: {arr[1]}, Năm: {arr[2]}')
+
+    # cách 2: dùng replace() và slicing
+date2 = date1.replace('/', ' tháng ', 1)
+date2 = date2.replace('/', ' năm ', 1)
+print('Ngày tháng năm:', date2)
 
 # Bài 3: Nhập vào thông tin dạng username:password
     # kiểm tra xem thông tin vừa nhập có trùng với thông tin có sẵn
