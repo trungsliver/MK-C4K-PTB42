@@ -83,6 +83,18 @@ print('upper():', name.upper())
     # title() - Viết hoa chữ cái đầu tiên của mỗi từ
 print('title():', name.title())
 
+# Chuyển đổi kiểu dữ liệu trong danh sách
+numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+    # Cách 1: 
+num1 = []
+for item in numbers:
+    num1.append(int(item))
+print('num1:', num1)
+
+    # Cách 2: Dùng list comprehension
+num2 = [int(item) for item in numbers]
+print('num2:', num2)
+
 # ------------------------- Luyện tập -----------------------
 # Bài 1: Nhập 2 thông tin: họ, tên. In ra màn hình tên đầy đủ
 
