@@ -2,20 +2,76 @@
 # Bài 1: Nhập vào từ bàn phím các thông tin các nhân: 
     # Họ tên, Tuổi, Trường học, giới tính, điểm trung bình.
     # In ra màn hình các thông tin vừa nhập
+name = input('Nhập tên: ')
+age = int(input('Nhập tuổi: '))
+school = input('Nhập trường học: ')
+gender = input('Nhập giới tính: ')
+score = float(input('Nhập điểm trung bình: '))
+
+print('===== Thông tin cá nhân =====')
+print('Họ tên:', name)
+print('Tuổi:', age)
+print('Trường học:', school)
+print('Giới tính:', gender)
+print('Điểm trung bình:', score)
 
 # Bài 2: Nhập vào chiều dài và chiều rộng hình chữ nhật
     # In ra màn hình chu vi và diện tích hình chữ nhật đó.
+length = float(input('Nhập chiều dài: '))
+width = float(input('Nhập chiều rộng: '))
+
+perimeter = 2 * (length + width)
+area = length * width
+
+print('===== Hình chữ nhật =====')
+print('Chu vi:', perimeter)
+print('Diện tích:', area)
 
 # Bài 3: Nhập số nguyên n từ bàn phím.
     # Kiểm tra xem n có phải là số chẵn hay không.
+number = int(input('Nhập số nguyên n: '))
+if number % 2 == 0:
+    print(number, "là số chẵn")
+else:
+    print(number, "là số lẻ")
 
 # Bài 4: Nhập điểm số từ bàn phím. Hãy in ra mà hình xếp hạng học lực, biết rằng:
     # 8-10: Giỏi, 6.5-8: Khá, 5-6.5: Trung Bình, 0-5: Yếu
+score = float(input('Hãy nhập điểm của bạn: '))
+if 8 <= score <= 10:
+    print('Xếp loại: Giỏi')
+elif 6.5 <= score < 8:
+    print('Xếp loại: Khá')
+elif 5 <= score < 6.5:
+    print('Xếp loại: Trung bình')
+elif 0 <= score < 5:
+    print('Xếp loại: Yếu')
+else:
+    print('Điểm không hợp lệ')
 
 # Bài 5: Nhập 2 số nguyên a và b từ bàn phím
+a = int(input('Nhập a: '))
+b = int(input('Nhập b: '))
     # Yêu cầu 1: In ra tất cả các số trong khoảng [a, b] hoặc ngược lại
+if a > b:
+    a, b = b, a
+print(f'Các số trong khoảng [{a}, {b}]: ')
+for i in range(a, b+1):
+    print(i, end=' ')
+
     # Yêu cầu 2: Tính tổng các số chia hết cho 3 trog khoảng vừa in
+total = 0
+for i in range(a, b+1):
+    if i % 3 == 0:
+        total += i
+print(f'\nTổng các số chia hết cho 3 trong khoảng [{a}, {b}] là: {total}')
+
     # Yêu cầu 3: In ra số lượng số lẻ có trong khoảng trên
+count = 0
+for i in range(a, b+1):
+    if i % 2 != 0:
+        count += 1
+print(f'Số lượng số lẻ trong khoảng [{a}, {b}] là: {count}')
 
 # Bài 6: In ra bảng cửu chương từ 5 đến 9
 
