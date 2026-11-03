@@ -60,3 +60,6 @@ Coding Showdown không chỉ là một cuộc thi tính điểm mà còn giúp c
 * 🏆 **Trải nghiệm không khí thi đấu thực tế** và học cách xây dựng chiến thuật thi đấu.
 
 > **Coding Showdown – Học kiến thức, luyện tư duy, bứt phá trên sân đấu!** 🏆
+
+
+Link chơi: https://coding-showdown-arena.vercel.app/
